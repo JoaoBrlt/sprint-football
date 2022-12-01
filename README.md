@@ -73,7 +73,16 @@ L'application et l'infrastructure nécessaire à son fonctionnement (base de don
 En effet, Docker permet de faciliter les déploiements d'application et la gestion du dimensionnement de l'infrastructure.
 De plus, Docker permet d'optimiser l’utilisation de l'infrastructure et de standardiser les environnements de déploiement.
 
+8. **Mise en place d'un workflow GitHub Actions**
+
+Le projet utilise un workflow GitHub Actions pour s'assurer que la compilation, les tests unitaires et les tests d'intégration passent avec succès après chaque modification (intégration continue).
+Cela permet de réduire considérablement le nombre de risques potentiels puisque chaque modification est testée dans un environnement connu.
+
 ## Évolutions possibles
 
-1. Mettre en place des outils de monitoring (Prometheus, Grafana, Loki, ELK, etc.)
-2. Respecter la contrainte HATEOAS de l'architecture d'application REST
+1. Mettre en place des outils de monitoring (e.g. Prometheus, Grafana, Loki, ELK)
+2. Mettre en place des outils d'analyse de la qualité logicielle (e.g. Sonarqube, Pitest)
+3. Mettre en place des outils d'analyse de sécurité applicative (e.g. Checkmarx, OWASP ZAP)
+4. Respecter la contrainte HATEOAS de l'architecture d'application REST
+5. Automatiser le déploiement de la solution (e.g. Ansible, CD, etc.)
+6. etc.
